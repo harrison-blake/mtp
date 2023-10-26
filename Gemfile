@@ -10,6 +10,7 @@ gem "puma", "~> 5.0"
 gem "faraday"
 gem "vcr"
 gem "webmock"
+gem "openssl"
 
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 

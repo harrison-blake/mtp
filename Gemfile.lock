@@ -119,6 +119,7 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
+    openssl (3.2.0)
     pg (1.5.4)
     psych (5.1.0)
       stringio
@@ -210,6 +211,7 @@ DEPENDENCIES
   byebug (~> 11.1)
   debug
   faraday
+  openssl
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.8)
