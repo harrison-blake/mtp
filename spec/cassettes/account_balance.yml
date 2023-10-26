@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.kraken.com/0/private/Balance
+    body:
+      encoding: UTF-8
+      string: nonce=1698210174
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Api-Key:
+      - some_api_key
+      Api-Sign:
+      - some_api_sign
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 25 Oct 2023 05:02:54 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Cache-Control:
+      - no-store
+      X-Trace-Id:
+      - 0a501017018b6536d584004bb64c3218
+      X-Proxy:
+      - gateway
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cf-Cache-Status:
+      - DYNAMIC
+      Set-Cookie:
+      - __cf_bm=xx3D0gSk5Nr_d.dx0_RIQoRTsUjzQ3J_dc2CTD0nOdQ-1698210174-0-AdOfCVIfYIwstlYMjvh54UWsybrvcLbHLtW2kCzo1doNXYCD7BWJJYgbNo5WJcW3I2vDRfqSeNUZMiY3kPiAOwg=;
+        path=/; expires=Wed, 25-Oct-23 05:32:54 GMT; domain=.kraken.com; HttpOnly;
+        Secure; SameSite=None
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 81b7e8f57d7c538d-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":[],"result":{"ADA":"200.75362864","XXRP":"102.37510238","ZUSD":"0.0000"}}'
+  recorded_at: Wed, 25 Oct 2023 05:02:54 GMT
+recorded_with: VCR 6.2.0

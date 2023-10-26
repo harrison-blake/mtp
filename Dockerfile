@@ -1,6 +1,6 @@
 FROM ruby:3.2
 
-RUN apt-get update -yqq && apt-get install -yqq --no-install-recommends nodejs
+RUN apt-get update -yqq && apt-get install -y vim -yqq --no-install-recommends nodejs
 
 COPY Gemfile* /usr/src/app/
 WORKDIR /usr/src/app
