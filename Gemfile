@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.2"
+ruby "3.3.1"
 
 gem "rails", "~> 7.0.8"
 gem "sprockets-rails"
@@ -11,6 +11,7 @@ gem "faraday"
 gem "vcr"
 gem "webmock"
 gem "openssl"
+gem "bcrypt"
 
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
