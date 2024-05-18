@@ -1,0 +1,6 @@
+<h1> <%= @user.name %> </h1>
+<body>
+    <% (0...6).each do |i| %>
+       <%= (@start_of_week + i).strftime("%A, %d %B %Y") %></br >
+    <% end %>
+</body>

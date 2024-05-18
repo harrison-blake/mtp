@@ -1,1 +1,16 @@
 <h1>Home</h1>
+<body>
+   <%= form_with url: sessions_path do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :password %>
+      <%= f.text_field :password_digest %>
+
+      <%= f.submit "Login" %>
+   <% end %>
+
+   <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, class: name %>
+   <% end %>
+</body>

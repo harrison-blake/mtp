@@ -11,7 +11,7 @@ gem "faraday"
 gem "vcr"
 gem "webmock"
 gem "openssl"
-gem "bcrypt"
+gem "bcrypt", "~> 3.1.7"
 
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
